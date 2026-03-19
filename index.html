@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TN Harmony Beauty | Luxury Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+--pink:#E9A0A0;
+--gold:#D4AF37;
+--dark:#111;
+--light:#fff;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Jost',sans-serif;background:linear-gradient(180deg,#fff,#fff 40%,#D4AF37 100%);color:#111;}
+
+h1,h2,h3{font-family:'Cormorant Garamond',serif;}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 6%;
+background:rgba(255,255,255,0.92);
+backdrop-filter:blur(12px);
+display:flex;
+align-items:center;
+z-index:999;
+}
+
+.logo img{
+height:110px; /* увеличили ещё */
+width:auto;
+}
+
+.menu{
+margin-left:auto;
+}
+
+.menu a{
+margin-left:25px;
+text-decoration:none;
+color:#111;
+font-size:12px;
+letter-spacing:2px;
+text-transform:uppercase;
+}
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(135deg,#fff,#fdf3e6);
+}
+
+.hero h1{
+font-size:clamp(60px,10vw,110px);
+line-height:1.1;
+}
+
+.hero p{
+letter-spacing:3px;
+text-transform:uppercase;
+font-size:16px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:24px 70px;
+background:linear-gradient(45deg,#E9A0A0,#D4AF37);
+border-radius:60px;
+color:#fff;
+text-decoration:none;
+font-size:18px;
+font-weight:600;
+}
+
+.pressure{
+background:#111;
+color:#fff;
+padding:25px;
+text-align:center;
+font-size:13px;
+letter-spacing:2px;
+}
+
+section{
+padding:100px 7%;
+text-align:center;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:35px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+background:#fff;
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.card-content{
+padding:30px;
+}
+
+.gallery{
+column-count:3;
+column-gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+margin-bottom:20px;
+border-radius:20px;
+}
+
+.map{
+width:100%;
+height:400px;
+border:0;
+border-radius:20px;
+}
+
+footer{
+background:#111;
+color:#fff;
+padding:80px 20px;
+text-align:center;
+}
+
+/* Floating */
+.float-social{
+position:fixed;
+right:20px;
+bottom:100px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.social-btn{
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:24px;
+text-decoration:none;
+}
+
+.whatsapp{background:#25D366;}
+.instagram{
+background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);
+}
+
+@media(max-width:900px){
+.gallery{column-count:2;}
+.logo img{height:80px;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+<img src="https://i.postimg.cc/kXwCYgBS/Screenshot_20260318_100855_M365_Copilot.jpg">
+</div>
+
+<div class="menu">
+<a href="#services">Services</a>
+<a href="#portfolio">Works</a>
+<a href="tel:3607517661">Book</a>
+</div>
+</nav>
+
+<header class="hero">
+<div>
+<h1>Luxury Nail Perfection</h1>
+<p>Private Russian Technique Studio</p>
+<a class="btn" href="tel:3607517661">Book Appointment</a>
+</div>
+</header>
+
+<div class="pressure">
+LIMITED DAILY CLIENTS • PREMIUM STERILIZATION • PERSONALIZED LUXURY SERVICE
+</div>
+
+<section>
+<h2>Signature Services</h2>
+
+<div class="services">
+
+<div class="card">
+<img src="https://i.postimg.cc/xCbLjdkJ/IMG_8074.jpg">
+<div class="card-content">
+<h3>Russian Manicure</h3>
+<p>Deep precision hardware technique.</p>
+<b>$80</b>
+</div>
+</div>
+
+<div class="card">
+<img src="https://i.postimg.cc/JzPNPvV1/IMG_7560.jpg">
+<div class="card-content">
+<h3>Hard Gel Overlay</h3>
+<p>Strong architectural nail structure.</p>
+<b>$95</b>
+</div>
+</div>
+
+<div class="card">
+<img src="https://i.postimg.cc/zGxPgYW3/IMG_8367.jpg">
+<div class="card-content">
+<h3>Smart Pedicure</h3>
+<p>Dry luxury foot treatment.</p>
+<b>$85</b>
+</div>
+</div>
+
+<div class="card">
+<img src="https://i.postimg.cc/rp5t7P7z/IMG_20260318_WA0002.jpg">
+<div class="card-content">
+<h3>Buccal Sculpting Facial</h3>
+<p>Deep intra-oral lifting massage.</p>
+<b>$130</b>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="portfolio">
+<h2>Client Results</h2>
+
+<div class="gallery">
+<img src="https://i.postimg.cc/Hs047j6x/IMG_8081.jpg">
+<img src="https://i.postimg.cc/t4TjKG6n/IMG_8739.jpg">
+<img src="https://i.postimg.cc/xCbLjdkJ/IMG_8074.jpg">
+<img src="https://i.postimg.cc/JzPNPvV1/IMG_7560.jpg">
+<img src="https://i.postimg.cc/pL2QQxSq/IMG_8083.jpg"> <!-- добавили -->
+</div>
+</section>
+
+<section>
+<h2>Visit Studio</h2>
+<iframe class="map" src="https://www.google.com/maps?q=21+Utility+Dr+Suite+B+Palm+Coast+FL&output=embed"></iframe>
+</section>
+
+<footer>
+<h3>TN Harmony Beauty</h3>
+<p>📞 (360) 751-7661</p>
+<p>📞 (386) 237-5526</p>
+<p style="opacity:.6;margin-top:20px;font-size:12px;">Private studio • By appointment only</p>
+</footer>
+
+<div class="float-social">
+<a href="https://wa.me/13607517661" class="social-btn whatsapp">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="https://instagram.com/tnharmonybeauty" class="social-btn instagram">
+<i class="fa-brands fa-instagram"></i>
+</a>
+</div>
+
+</body>
+</html>
