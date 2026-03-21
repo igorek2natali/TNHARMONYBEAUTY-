@@ -13,11 +13,10 @@
 --pink:#E9A0A0;
 --gold:#D4AF37;
 --dark:#111;
---light:#fff;
 }
 
 *{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:'Jost',sans-serif;background:linear-gradient(180deg,#fff,#fff 40%,#D4AF37 100%);color:#111;}
+body{font-family:'Jost',sans-serif;background:#fff;}
 
 h1,h2,h3{font-family:'Cormorant Garamond',serif;}
 
@@ -29,27 +28,12 @@ padding:18px 6%;
 background:rgba(255,255,255,0.92);
 backdrop-filter:blur(12px);
 display:flex;
-align-items:center;
 z-index:999;
 }
 
-.logo img{
-height:110px; /* увеличили ещё */
-width:auto;
-}
-
-.menu{
-margin-left:auto;
-}
-
-.menu a{
-margin-left:25px;
-text-decoration:none;
-color:#111;
-font-size:12px;
-letter-spacing:2px;
-text-transform:uppercase;
-}
+.logo img{height:90px;}
+.menu{margin-left:auto;}
+.menu a{margin-left:25px;text-decoration:none;color:#111;font-size:12px;letter-spacing:2px;text-transform:uppercase;}
 
 .hero{
 height:90vh;
@@ -60,126 +44,132 @@ text-align:center;
 background:linear-gradient(135deg,#fff,#fdf3e6);
 }
 
-.hero h1{
-font-size:clamp(60px,10vw,110px);
-line-height:1.1;
-}
-
-.hero p{
-letter-spacing:3px;
-text-transform:uppercase;
-font-size:16px;
-}
+.hero h1{font-size:clamp(50px,8vw,90px);}
 
 .btn{
-display:inline-block;
 margin-top:30px;
-padding:24px 70px;
+padding:18px 50px;
 background:linear-gradient(45deg,#E9A0A0,#D4AF37);
 border-radius:60px;
 color:#fff;
 text-decoration:none;
-font-size:18px;
-font-weight:600;
+display:inline-block;
 }
 
-.pressure{
-background:#111;
-color:#fff;
-padding:25px;
-text-align:center;
-font-size:13px;
-letter-spacing:2px;
-}
-
-section{
-padding:100px 7%;
-text-align:center;
-}
+section{padding:90px 6%;text-align:center;}
 
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:35px;
+gap:25px;
 max-width:1200px;
 margin:auto;
 }
 
 .card{
-border-radius:25px;
+border-radius:20px;
 overflow:hidden;
-box-shadow:0 20px 50px rgba(0,0,0,.08);
+box-shadow:0 15px 40px rgba(0,0,0,.08);
 background:#fff;
+transition:.3s;
 }
+
+.card:hover{transform:translateY(-6px);}
 
 .card img{
 width:100%;
-height:240px;
+height:230px;
 object-fit:cover;
 }
 
-.card-content{
-padding:30px;
+.card-content{padding:18px;text-align:left;}
+
+.card-content h3{
+display:flex;
+justify-content:space-between;
+font-size:18px;
 }
 
+.card-content p{
+margin-top:6px;
+opacity:.75;
+font-size:14px;
+line-height:1.5;
+}
+
+/* ===== MY WORK GALLERY ===== */
 .gallery{
-column-count:3;
-column-gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:12px;
 max-width:1200px;
 margin:auto;
 }
 
 .gallery img{
 width:100%;
-margin-bottom:20px;
-border-radius:20px;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
 }
 
-.map{
-width:100%;
-height:400px;
-border:0;
-border-radius:20px;
+.gallery img:hover{
+transform:scale(1.05);
 }
+
+/* LIGHTBOX */
+.lightbox{
+position:fixed;
+top:0;left:0;
+width:100%;height:100%;
+background:rgba(0,0,0,0.9);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:9999;
+}
+
+.lightbox img{
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+}
+
+.lightbox.active{display:flex;}
 
 footer{
 background:#111;
 color:#fff;
-padding:80px 20px;
+padding:50px;
 text-align:center;
 }
 
-/* Floating */
 .float-social{
 position:fixed;
 right:20px;
-bottom:100px;
+bottom:80px;
 display:flex;
 flex-direction:column;
-gap:12px;
+gap:10px;
 }
 
 .social-btn{
-width:55px;
-height:55px;
+width:50px;
+height:50px;
 border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
 color:#fff;
-font-size:24px;
-text-decoration:none;
+font-size:20px;
 }
 
 .whatsapp{background:#25D366;}
-.instagram{
-background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);
-}
+.instagram{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);}
+.facebook{background:#1877F2;}
 
-@media(max-width:900px){
-.gallery{column-count:2;}
-.logo img{height:80px;}
-}
 </style>
 </head>
 
@@ -192,7 +182,7 @@ background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);
 
 <div class="menu">
 <a href="#services">Services</a>
-<a href="#portfolio">Works</a>
+<a href="#work">My Work</a>
 <a href="tel:3607517661">Book</a>
 </div>
 </nav>
@@ -200,92 +190,104 @@ background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);
 <header class="hero">
 <div>
 <h1>Luxury Nail Perfection</h1>
-<p>Private Russian Technique Studio</p>
 <a class="btn" href="tel:3607517661">Book Appointment</a>
 </div>
 </header>
 
-<div class="pressure">
-LIMITED DAILY CLIENTS • PREMIUM STERILIZATION • PERSONALIZED LUXURY SERVICE
-</div>
-
-<section>
+<section id="services">
 <h2>Signature Services</h2>
 
 <div class="services">
 
 <div class="card">
-<img src="https://i.postimg.cc/xCbLjdkJ/IMG_8074.jpg">
+<img src="https://i.postimg.cc/htRvsqbz/IMG_20260321_WA0032.jpg">
 <div class="card-content">
-<h3>Russian Manicure</h3>
-<p>Deep precision hardware technique.</p>
-<b>$80</b>
+<h3>Russian Manicure <span>$50</span></h3>
+<p>
+(No Gel / No Polish)<br>
+(E-file cuticle care)<br><br>
+Precise dry manicure with detailed cuticle care using an electric file.
+</p>
 </div>
 </div>
 
 <div class="card">
 <img src="https://i.postimg.cc/JzPNPvV1/IMG_7560.jpg">
 <div class="card-content">
-<h3>Hard Gel Overlay</h3>
-<p>Strong architectural nail structure.</p>
-<b>$95</b>
+<h3>Structured Gel <span>$70</span></h3>
+<p>Strengthening gel with long-lasting polish.</p>
 </div>
 </div>
 
 <div class="card">
 <img src="https://i.postimg.cc/zGxPgYW3/IMG_8367.jpg">
 <div class="card-content">
-<h3>Smart Pedicure</h3>
-<p>Dry luxury foot treatment.</p>
-<b>$85</b>
-</div>
-</div>
-
-<div class="card">
-<img src="https://i.postimg.cc/rp5t7P7z/IMG_20260318_WA0002.jpg">
-<div class="card-content">
-<h3>Buccal Sculpting Facial</h3>
-<p>Deep intra-oral lifting massage.</p>
-<b>$130</b>
+<h3>Smart Pedicure <span>$65</span></h3>
+<p>Modern dry pedicure with e-file technique.</p>
 </div>
 </div>
 
 </div>
 </section>
 
-<section id="portfolio">
-<h2>Client Results</h2>
+<section id="work">
+<h2>My Work</h2>
 
 <div class="gallery">
+
 <img src="https://i.postimg.cc/Hs047j6x/IMG_8081.jpg">
-<img src="https://i.postimg.cc/t4TjKG6n/IMG_8739.jpg">
+<img src="https://i.postimg.cc/Ls5z7D23/IMG_7565.jpg">
+<img src="https://i.postimg.cc/9Mp22vvw/Screenshot_20260321_085507_M365_Copilot.jpg">
+<img src="https://i.postimg.cc/ydPKKwwD/Screenshot_20260321_085525_M365_Copilot.jpg">
+<img src="https://i.postimg.cc/0QfvvLLJ/Screenshot_20260321_085534_M365_Copilot.jpg">
+<img src="https://i.postimg.cc/Jnq8899X/Screenshot_20260321_085543_M365_Copilot.jpg">
+<img src="https://i.postimg.cc/0jysyVsN/Screenshot_20260321_085553_M365_Copilot.jpg">
+<img src="https://i.postimg.cc/2ySDS0Dy/Screenshot_20260321_085600_M365_Copilot.jpg">
+<img src="https://i.postimg.cc/j2SbSMbC/Screenshot_20260321_085608_M365_Copilot.jpg">
+<img src="https://i.postimg.cc/SRxhxghC/Screenshot_20260321_085616_M365_Copilot.jpg">
+<img src="https://i.postimg.cc/RhZBZgBw/Screenshot_20260321_085806_Telegram.jpg">
+<img src="https://i.postimg.cc/Zn5S5wSr/Screenshot_20260321_085810_Telegram.jpg">
+<img src="https://i.postimg.cc/nrhJh3JY/Screenshot_20260321_085823_Telegram.jpg">
+<img src="https://i.postimg.cc/gj2W2gWK/Screenshot_20260321_085828_M365_Copilot.jpg">
+
+<!-- NEW IMAGE -->
 <img src="https://i.postimg.cc/xCbLjdkJ/IMG_8074.jpg">
-<img src="https://i.postimg.cc/JzPNPvV1/IMG_7560.jpg">
-<img src="https://i.postimg.cc/pL2QQxSq/IMG_8083.jpg"> <!-- добавили -->
+
 </div>
 </section>
 
-<section>
-<h2>Visit Studio</h2>
-<iframe class="map" src="https://www.google.com/maps?q=21+Utility+Dr+Suite+B+Palm+Coast+FL&output=embed"></iframe>
-</section>
+<div class="lightbox" id="lightbox">
+<img id="lightbox-img">
+</div>
 
 <footer>
 <h3>TN Harmony Beauty</h3>
 <p>📞 (360) 751-7661</p>
 <p>📞 (386) 237-5526</p>
-<p style="opacity:.6;margin-top:20px;font-size:12px;">Private studio • By appointment only</p>
 </footer>
 
 <div class="float-social">
-<a href="https://wa.me/13607517661" class="social-btn whatsapp">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-
-<a href="https://instagram.com/tnharmonybeauty" class="social-btn instagram">
-<i class="fa-brands fa-instagram"></i>
-</a>
+<a href="https://wa.me/13607517661" class="social-btn whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://instagram.com/tnharmonybeauty" class="social-btn instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com/share/1C3vNJF8AX/" class="social-btn facebook"><i class="fa-brands fa-facebook-f"></i></a>
 </div>
+
+<script>
+const gallery = document.querySelectorAll('.gallery img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+gallery.forEach(img=>{
+img.addEventListener('click',()=>{
+lightbox.classList.add('active');
+lightboxImg.src = img.src;
+});
+});
+
+lightbox.addEventListener('click',()=>{
+lightbox.classList.remove('active');
+});
+</script>
 
 </body>
 </html>
