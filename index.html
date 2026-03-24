@@ -62,14 +62,14 @@ nav {
 
 .logo {
   overflow: hidden;
-  width: 90px;
-  height: 90px;
+  width: 130px;
+  height: 130px;
   flex-shrink: 0;
 }
 
 .logo img {
-  width: 90px;
-  height: 90px;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -144,7 +144,7 @@ nav {
   position: fixed;
   inset: 0;
   background: var(--cream);
-  z-index: 999;
+  z-index: 9999;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -171,9 +171,22 @@ nav {
   position: absolute;
   top: 28px;
   right: 6%;
-  font-size: 28px;
+  font-size: 36px;
   cursor: pointer;
   color: var(--dark);
+  background: none;
+  border: none;
+  outline: none;
+  padding: 12px;
+  z-index: 10000;
+  line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  min-width: 56px;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes fadeUp {
@@ -501,22 +514,31 @@ nav {
 .service-book-btn {
   display: block;
   margin: 20px 26px 26px;
-  padding: 13px;
-  background: var(--cream);
+  padding: 14px 13px;
+  background: linear-gradient(135deg, var(--rose) 0%, #b5606a 100%);
   border-radius: 12px;
   text-align: center;
-  color: var(--dark);
+  color: var(--white);
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s, color 0.3s;
+  font-weight: 700;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 18px rgba(201, 132, 138, 0.45);
+}
+
+.service-book-btn::before {
+  content: '📅 ';
+  font-size: 14px;
+  letter-spacing: 0;
 }
 
 .service-book-btn:hover {
-  background: var(--dark);
+  background: linear-gradient(135deg, #b5606a 0%, var(--gold) 100%);
   color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(201, 132, 138, 0.6);
 }
 
 /* ─── ABOUT / QUOTE ─── */
@@ -895,6 +917,95 @@ nav {
 .cta-phone:hover { background: rgba(255,255,255,0.08); }
 .cta-phone i { color: var(--gold); }
 
+/* ─── TEAM CARD ─── */
+.team-section {
+  padding: 0 6% 90px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background: linear-gradient(135deg, var(--dark) 0%, #2e1a17 100%);
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 20px 60px rgba(26,18,16,0.25);
+  position: relative;
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--rose), var(--gold), var(--rose));
+}
+
+.team-photo {
+  flex: 0 0 45%;
+  max-width: 45%;
+  overflow: hidden;
+}
+
+.team-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.team-info {
+  flex: 1;
+  padding: 44px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+.team-info .section-label { color: var(--gold); }
+
+.team-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: var(--white);
+  line-height: 1.3;
+}
+
+.team-info p {
+  color: rgba(255,255,255,0.72);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.team-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.team-badge {
+  background: rgba(201,132,138,0.18);
+  border: 1px solid rgba(201,132,138,0.35);
+  color: var(--rose-light);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+  .team-card { flex-direction: column; }
+  .team-photo { flex: none; max-width: 100%; height: auto; }
+  .team-photo img { height: auto; }
+  .team-info { padding: 30px 24px; }
+  .team-info h3 { font-size: 22px; }
+}
+
 /* ─── FOOTER ─── */
 footer {
   background: var(--dark);
@@ -913,13 +1024,13 @@ footer {
 
 .footer-logo {
   overflow: hidden;
-  width: 90px;
-  height: 90px;
+  width: 130px;
+  height: 130px;
 }
 
 .footer-logo img {
-  width: 90px;
-  height: 90px;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -1061,6 +1172,17 @@ footer {
   .about-img-main { width: 75%; height: 320px; }
   .about-img-accent { width: 55%; height: 210px; }
   .masonry-grid { columns: 3; }
+}
+
+@media (max-width: 480px) {
+  .masonry-grid {
+    columns: 2;
+    column-gap: 8px;
+  }
+  .masonry-item {
+    margin-bottom: 8px;
+    border-radius: 10px;
+  }
 }
 
 /* ─── EXTRA SERVICES ─── */
@@ -1393,7 +1515,7 @@ footer {
 <!-- SERVICES -->
 <section id="services">
   <div class="section-header reveal">
-    <span class="section-label">What I Offer</span>
+    <span class="section-label">What We Offer</span>
     <h2>Signature Services</h2>
     <p>Each treatment is crafted with precision and care, using professional-grade techniques and premium products.</p>
   </div>
@@ -1599,6 +1721,26 @@ footer {
   </div>
 </section>
 
+<!-- TEAM CARD -->
+<div class="team-section reveal">
+  <div class="team-card">
+    <div class="team-photo">
+      <img src="https://i.postimg.cc/Gm2znN64/IMG-0579.avif" alt="TN Harmony Beauty Team" loading="lazy">
+    </div>
+    <div class="team-info">
+      <span class="section-label">Meet The Team</span>
+      <h3>Two Masters.<br>One Vision of Perfection.</h3>
+      <p>TN Harmony Beauty is built on the partnership of two dedicated nail specialists who share a passion for precision, artistry, and luxury care. Together, they bring combined expertise in Russian Manicure, Structured Gel, and Smart Pedicure — delivering results that speak for themselves.</p>
+      <div class="team-badges">
+        <span class="team-badge">Russian Manicure</span>
+        <span class="team-badge">Structured Gel</span>
+        <span class="team-badge">Smart Pedicure</span>
+        <span class="team-badge">Premium Products</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- GALLERY -->
 <section id="work" style="padding: 110px 6%; background: var(--cream);">
   <div class="section-header reveal">
@@ -1743,6 +1885,15 @@ document.querySelectorAll('.masonry-item img, .service-card-img img, .about-img-
 // MOBILE MENU
 function openMenu() { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow = 'hidden'; }
 function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow = ''; }
+
+// Надёжное закрытие меню на мобильных
+(function() {
+  var closeBtn = document.querySelector('.close-menu');
+  if (closeBtn) {
+    closeBtn.addEventListener('touchstart', function(e) { e.preventDefault(); closeMenu(); }, { passive: false });
+    closeBtn.addEventListener('click', closeMenu);
+  }
+})();
 
 // LIGHTBOX
 const items = document.querySelectorAll('.masonry-item');
