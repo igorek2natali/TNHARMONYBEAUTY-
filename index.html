@@ -21,6 +21,7 @@
 <meta name="twitter:description" content="Russian Manicure · Structured Gel · Smart Pedicure. Book your appointment today.">
 <meta name="twitter:image" content="https://i.postimg.cc/t4TjKG6n/Title_2.jpg">
 
+<link rel="icon" href="logo.webp" type="image/webp">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -39,7 +40,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; overflow-x: hidden; }
+html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Outfit', sans-serif;
@@ -218,7 +219,6 @@ nav {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-top: -80px;
   width: 100%;
   max-width: 100%;
 }
@@ -1484,7 +1484,37 @@ footer {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+.footer-info { text-align: center; padding: 0 6% 24px; color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.8; }
+.footer-info a { color: inherit; text-decoration: none; }
+.footer-info a:hover { color: var(--gold); }
+.footer-info i { margin-right: 8px; color: var(--gold); }
+.footer-info p { margin: 0; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NailSalon",
+  "name": "TN Harmony Beauty",
+  "url": "https://tnharmonybeauty.com",
+  "telephone": "+1-386-318-0622",
+  "image": "https://i.postimg.cc/t4TjKG6n/Title_2.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "21 Utility Dr # B",
+    "addressLocality": "Palm Coast",
+    "addressRegion": "FL",
+    "postalCode": "32137",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "16:00"
+  }],
+  "sameAs": ["https://instagram.com/tnharmonybeauty","https://www.facebook.com/share/1F8DMAdn4Z/"]
+}
+</script>
 </head>
 <body>
 
@@ -1497,7 +1527,7 @@ footer {
     <a href="#services">Services</a>
     <a href="#work">Our Work</a>
     <a href="#reviews">Reviews</a>
-    <a href="https://tn-harmony-beauty-llc-palm-coast.cloveronline.com" target="_blank" rel="noopener noreferrer" class="nav-book">Book Now</a>
+    <a href="https://tn-harmony-beauty-llc-palm-coast.cloveronline.com/" target="_blank" rel="noopener noreferrer" class="nav-book">Book Now</a>
   </div>
   <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open menu" aria-controls="mobileMenu" onclick="openMenu()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openMenu();}">
     <span></span><span></span><span></span>
@@ -1510,7 +1540,7 @@ footer {
   <a href="#services" onclick="closeMenu()">Services</a>
   <a href="#work" onclick="closeMenu()">Our Work</a>
   <a href="#reviews" onclick="closeMenu()">Reviews</a>
-  <a href="https://tn-harmony-beauty-llc-palm-coast.cloveronline.com" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">Book Now</a>
+  <a href="https://tn-harmony-beauty-llc-palm-coast.cloveronline.com/" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">Book Now</a>
 </div>
 
 <!-- HERO -->
@@ -1522,7 +1552,7 @@ footer {
     <h1>TN Harmony<em>Beauty</em></h1>
     <p class="hero-sub">Russian Manicure · Structured Gel · Smart Pedicure</p>
     <div class="hero-cta">
-      <a href="https://tnharmonybeauty.cloveronline.com" target="_blank" rel="noopener noreferrer" class="btn-primary">Book Appointment</a>
+      <a href="https://tn-harmony-beauty-llc-palm-coast.cloveronline.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">Book Appointment</a>
       <a href="#work" class="btn-outline">View Our Work</a>
     </div>
   </div>
@@ -1572,7 +1602,7 @@ footer {
           <li>Long-lasting results</li>
         </ul>
       </div>
-      <a href="https://tnharmonybeauty.cloveronline.com" target="_blank" rel="noopener noreferrer" class="service-book-btn">Book This Service →</a>
+      <a href="https://tn-harmony-beauty-llc-palm-coast.cloveronline.com/" target="_blank" rel="noopener noreferrer" class="service-book-btn">Book This Service →</a>
     </div>
 
     <div class="service-card reveal">
@@ -1589,7 +1619,7 @@ footer {
           <li>Full color finish</li>
         </ul>
       </div>
-      <a href="https://tnharmonybeauty.cloveronline.com" target="_blank" rel="noopener noreferrer" class="service-book-btn">Book This Service →</a>
+      <a href="https://tn-harmony-beauty-llc-palm-coast.cloveronline.com/" target="_blank" rel="noopener noreferrer" class="service-book-btn">Book This Service →</a>
     </div>
 
     <div class="service-card reveal">
@@ -1606,7 +1636,7 @@ footer {
           <li>No gel / no polish</li>
         </ul>
       </div>
-      <a href="https://tnharmonybeauty.cloveronline.com" target="_blank" rel="noopener noreferrer" class="service-book-btn">Book This Service →</a>
+      <a href="https://tn-harmony-beauty-llc-palm-coast.cloveronline.com/" target="_blank" rel="noopener noreferrer" class="service-book-btn">Book This Service →</a>
     </div>
 
     <div class="service-card reveal">
@@ -1623,7 +1653,7 @@ footer {
           <li>Gel polish finish</li>
         </ul>
       </div>
-      <a href="https://tnharmonybeauty.cloveronline.com" target="_blank" rel="noopener noreferrer" class="service-book-btn">Book This Service →</a>
+      <a href="https://tn-harmony-beauty-llc-palm-coast.cloveronline.com/" target="_blank" rel="noopener noreferrer" class="service-book-btn">Book This Service →</a>
     </div>
 
     <div class="service-card reveal">
@@ -1641,8 +1671,8 @@ footer {
           <li>Half the time, double the results</li>
         </ul>
       </div>
-      <p style="font-size:12px;color:var(--gold,#c9a84c);margin-top:10px;font-style:italic;line-height:1.5;">📞 To book this service, please contact our coordinator first at <a href="tel:3863180622" style="color:var(--gold,#c9a84c);">(386) 318-0622</a> — we need to ensure two technicians are available at the same time.</p>
-      <a href="tel:3863180622" class="service-book-btn">Call to Book →</a>
+      <p style="font-size:12px;color:var(--gold,#c9a84c);margin-top:10px;font-style:italic;line-height:1.5;">📞 To book this service, please contact our coordinator first at <a href="tel:+13863180622" style="color:var(--gold,#c9a84c);">(386) 318-0622</a> — we need to ensure two technicians are available at the same time.</p>
+      <a href="tel:+13863180622" class="service-book-btn">Call to Book →</a>
     </div>
 
     <div class="service-card reveal">
@@ -1661,7 +1691,7 @@ footer {
         </ul>
         <p style="font-size:12px;color:var(--mid);margin-top:10px;font-style:italic;">* Does not include foot care (heel treatment, lotion, massage oil, scrub or hot towels).</p>
       </div>
-      <a href="https://tnharmonybeauty.cloveronline.com" target="_blank" rel="noopener noreferrer" class="service-book-btn">Book This Service →</a>
+      <a href="https://tn-harmony-beauty-llc-palm-coast.cloveronline.com/" target="_blank" rel="noopener noreferrer" class="service-book-btn">Book This Service →</a>
     </div>
   </div>
 
@@ -1754,26 +1784,26 @@ footer {
   </div>
 
   <div class="masonry-grid" id="gallery">
-    <div class="masonry-item"><img src="https://i.postimg.cc/Hs047j6x/IMG_8081.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/Ls5z7D23/IMG_7565.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/9Mp22vvw/Screenshot_20260321_085507_M365_Copilot.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/ydPKKwwD/Screenshot_20260321_085525_M365_Copilot.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/0QfvvLLJ/Screenshot_20260321_085534_M365_Copilot.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/Jnq8899X/Screenshot_20260321_085543_M365_Copilot.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/0jysyVsN/Screenshot_20260321_085553_M365_Copilot.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/2ySDS0Dy/Screenshot_20260321_085600_M365_Copilot.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/j2SbSMbC/Screenshot_20260321_085608_M365_Copilot.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/SRxhxghC/Screenshot_20260321_085616_M365_Copilot.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/RhZBZgBw/Screenshot_20260321_085806_Telegram.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/Zn5S5wSr/Screenshot_20260321_085810_Telegram.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/nrhJh3JY/Screenshot_20260321_085823_Telegram.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/gj2W2gWK/Screenshot_20260321_085828_M365_Copilot.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/xCbLjdkJ/IMG_8074.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/zGxPgYW3/IMG_8367.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/wxJyGVvK/IMG_20260323_200021_141.avif" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/sfSQNcXy/IMG_20260323_200012_418.avif" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/0NBMLXD5/IMG_20260323_195945_329.jpg" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
-    <div class="masonry-item"><img src="https://i.postimg.cc/tRPZM5TH/IMG_20260323_195939_988.avif" alt="Nail work" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/Hs047j6x/IMG_8081.jpg" alt="TN Harmony Beauty nail work 1" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/Ls5z7D23/IMG_7565.jpg" alt="TN Harmony Beauty nail work 2" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/9Mp22vvw/Screenshot_20260321_085507_M365_Copilot.jpg" alt="TN Harmony Beauty nail work 3" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/ydPKKwwD/Screenshot_20260321_085525_M365_Copilot.jpg" alt="TN Harmony Beauty nail work 4" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/0QfvvLLJ/Screenshot_20260321_085534_M365_Copilot.jpg" alt="TN Harmony Beauty nail work 5" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/Jnq8899X/Screenshot_20260321_085543_M365_Copilot.jpg" alt="TN Harmony Beauty nail work 6" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/0jysyVsN/Screenshot_20260321_085553_M365_Copilot.jpg" alt="TN Harmony Beauty nail work 7" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/2ySDS0Dy/Screenshot_20260321_085600_M365_Copilot.jpg" alt="TN Harmony Beauty nail work 8" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/j2SbSMbC/Screenshot_20260321_085608_M365_Copilot.jpg" alt="TN Harmony Beauty nail work 9" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/SRxhxghC/Screenshot_20260321_085616_M365_Copilot.jpg" alt="TN Harmony Beauty nail work 10" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/RhZBZgBw/Screenshot_20260321_085806_Telegram.jpg" alt="TN Harmony Beauty nail work 11" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/Zn5S5wSr/Screenshot_20260321_085810_Telegram.jpg" alt="TN Harmony Beauty nail work 12" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/nrhJh3JY/Screenshot_20260321_085823_Telegram.jpg" alt="TN Harmony Beauty nail work 13" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/gj2W2gWK/Screenshot_20260321_085828_M365_Copilot.jpg" alt="TN Harmony Beauty nail work 14" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/xCbLjdkJ/IMG_8074.jpg" alt="TN Harmony Beauty nail work 15" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/zGxPgYW3/IMG_8367.jpg" alt="TN Harmony Beauty nail work 16" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/wxJyGVvK/IMG_20260323_200021_141.avif" alt="TN Harmony Beauty nail work 17" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/sfSQNcXy/IMG_20260323_200012_418.avif" alt="TN Harmony Beauty nail work 18" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/0NBMLXD5/IMG_20260323_195945_329.jpg" alt="TN Harmony Beauty nail work 19" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
+    <div class="masonry-item"><img src="https://i.postimg.cc/tRPZM5TH/IMG_20260323_195939_988.avif" alt="TN Harmony Beauty nail work 20" loading="lazy"><div class="masonry-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div>
   </div>
 </section>
 
@@ -1782,7 +1812,7 @@ footer {
   <button class="lb-close" aria-label="Close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
   <button class="lb-prev" aria-label="Previous photo" onclick="changeImage(-1)"><i class="fa-solid fa-chevron-left"></i></button>
   <div class="lightbox-inner">
-    <img id="lightbox-img" src="" alt="">
+    <img id="lightbox-img" alt="Enlarged photo">
   </div>
   <button class="lb-next" aria-label="Next photo" onclick="changeImage(1)"><i class="fa-solid fa-chevron-right"></i></button>
 </div>
@@ -1799,11 +1829,11 @@ footer {
     <div class="review-card reveal">
       <i class="fa-brands fa-google review-google"></i>
       <div class="review-stars">★★★★★</div>
-      <p>"Absolutely the best manicure I've ever had. The Russian technique is so precise and my nails lasted weeks without any lifting. 100% worth it!"</p>
+      <p>"absolutely love TN Harmony Beauty! From the moment you walk in, you feel such a calm, welcoming atmosphere. The service is truly top-tier -attentive, professional, and genuinely caring. What makes this place extra special is their unique four-hands nail service -it’s not only efficient but feels incredibly luxurious. My nails turned out absolutely perfect every time -clean, precise, and beautifully done. I also adore the little touches that make the experience unforgettable, like being offered a warm cup of coffee or tea while you relax. It’s those details that show how much they care about their clients. Hands down, this is the best place for nails and self-care. I genuinely love everything about it and always look forward to coming back!"</p>
       <div class="review-author">
-        <div class="review-avatar">S</div>
+        <div class="review-avatar">E</div>
         <div>
-          <div class="review-name">Sarah M.</div>
+          <div class="review-name">Elena Dimitrova</div>
           <div class="review-date">Google Review</div>
         </div>
       </div>
@@ -1811,11 +1841,11 @@ footer {
     <div class="review-card reveal">
       <i class="fa-brands fa-google review-google"></i>
       <div class="review-stars">★★★★★</div>
-      <p>"Such a luxurious experience! The studio is so clean and professional. My structured gel set looks amazing and feels so strong. I'll be back!"</p>
+      <p>"I had the best experience with Natalia! My nails look clean, classy, and perfectly shaped every time. I highly recommend if you want high quality Russian manicure."</p>
       <div class="review-author">
-        <div class="review-avatar">J</div>
+        <div class="review-avatar">N</div>
         <div>
-          <div class="review-name">Jessica L.</div>
+          <div class="review-name">Nataliya I</div>
           <div class="review-date">Google Review</div>
         </div>
       </div>
@@ -1823,11 +1853,11 @@ footer {
     <div class="review-card reveal">
       <i class="fa-brands fa-google review-google"></i>
       <div class="review-stars">★★★★★</div>
-      <p>"The smart pedicure changed my life! No soaking, no harsh chemicals — my feet have never looked or felt better. Highly recommend to everyone!"</p>
+      <p>"This saloon is so nice, the atmosphere is so calm. Super clean and modern. Also they using Medical grade autoclave for sterilisation."</p>
       <div class="review-author">
-        <div class="review-avatar">A</div>
+        <div class="review-avatar">А</div>
         <div>
-          <div class="review-name">Amanda R.</div>
+          <div class="review-name">Анна Боровская</div>
           <div class="review-date">Google Review</div>
         </div>
       </div>
@@ -1852,8 +1882,8 @@ footer {
   <h2>Ready for <em>Perfect Nails?</em></h2>
   <p>Call or message us to book your appointment today. Walk-ins not accepted.</p>
   <div class="cta-buttons">
-    <a href="https://tnharmonybeauty.cloveronline.com" target="_blank" rel="noopener noreferrer" class="btn-primary"><i class="fa-solid fa-calendar" style="margin-right:8px;"></i>Book Online</a>
-    <a href="tel:3863180622" class="cta-phone"><i class="fa-solid fa-phone"></i>(386) 318-0622</a>
+    <a href="https://tn-harmony-beauty-llc-palm-coast.cloveronline.com/" target="_blank" rel="noopener noreferrer" class="btn-primary"><i class="fa-solid fa-calendar" style="margin-right:8px;"></i>Book Online</a>
+    <a href="tel:+13863180622" class="cta-phone"><i class="fa-solid fa-phone"></i>(386) 318-0622</a>
     <a href="https://wa.me/13863180622" class="cta-phone"><i class="fa-brands fa-whatsapp" style="color:#25D366;"></i>WhatsApp</a>
   </div>
 </div>
@@ -1865,13 +1895,17 @@ footer {
     <img src="logo.webp" alt="TN Harmony Beauty" style="mix-blend-mode: lighten; filter: brightness(1.05);">
     </div>
     <div class="footer-phones">
-      <a href="tel:3863180622"><i class="fa-solid fa-phone"></i>(386) 318-0622</a>
+      <a href="tel:+13863180622"><i class="fa-solid fa-phone"></i>(386) 318-0622</a>
     </div>
     <div class="footer-socials">
       <a href="https://wa.me/13863180622" class="wa"><i class="fa-brands fa-whatsapp"></i></a>
       <a href="https://instagram.com/tnharmonybeauty" class="ig"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://www.facebook.com/share/1F8DMAdn4Z/" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
     </div>
+  </div>
+  <div class="footer-info">
+    <a href="https://www.google.com/maps/search/?api=1&query=21+Utility+Dr+B+Palm+Coast+FL+32137" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot"></i>21 Utility Dr # B, Palm Coast, FL 32137</a>
+    <p><i class="fa-regular fa-clock"></i>Mon–Fri: 9:00 AM – 4:00 PM · Sat &amp; Sun: Closed</p>
   </div>
   <div class="footer-bottom">
     <p>© 2026 TN Harmony Beauty. All rights reserved.</p>
@@ -1888,7 +1922,7 @@ footer {
 
 <!-- MOBILE STICKY BTN -->
 <div class="mobile-book-bar">
-  <a href="https://tnharmonybeauty.cloveronline.com" target="_blank" rel="noopener noreferrer">📅 Book Appointment Online</a>
+  <a href="https://tn-harmony-beauty-llc-palm-coast.cloveronline.com/" target="_blank" rel="noopener noreferrer">📅 Book Appointment Online</a>
 </div>
 
 <script>
@@ -1949,11 +1983,21 @@ function changeImage(dir) {
 
 lightboxImg.style.transition = 'opacity 0.15s';
 
+let touchX = null;
+lightbox.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+lightbox.addEventListener('touchend', (e) => {
+  if (touchX === null) return;
+  const dx = e.changedTouches[0].clientX - touchX;
+  touchX = null;
+  if (Math.abs(dx) > 50) changeImage(dx < 0 ? 1 : -1);
+}, { passive: true });
+
 lightbox.addEventListener('click', (e) => {
   if (e.target === lightbox) closeLightbox();
 });
 
 document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeMenu();
   if (!lightbox.classList.contains('active')) return;
   if (e.key === 'Escape') closeLightbox();
   if (e.key === 'ArrowLeft') changeImage(-1);
